@@ -1,0 +1,43 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large ML files
+checkpoints/
+datasets/
+models/
+hf_cache/
+.cache/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Logs and outputs
+logs/*
+!logs/.gitkeep
+results/*
+!results/.gitkeep
+outputs/
+wandb/
+
+# Colab/runtime
+/content/
+drive/
+.DS_Store
+
+# LIBERO/OpenVLA generated files
+*.log
+*.jsonl
+*.csv
+EOF
